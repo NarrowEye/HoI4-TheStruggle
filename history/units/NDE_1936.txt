@@ -1,0 +1,92 @@
+﻿division_template = {
+	name = "Landwehr"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Motorisierte Infantrie"
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division = {
+		name = "Berliner Landwehr Division"
+		location = 6521
+		division_template = "Landwehr"
+		start_experience_factor = 0.2
+	}
+division = {
+		name = "Von Moltke Division"
+		location = 6521
+		division_template = "Motorisierte Infantrie"
+		start_experience_factor = 0.5
+	}
+}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "NDE"
+		}
+		requested_factories = 5
+		progress = 0.00
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "NDE"
+		}
+		requested_factories = 3
+		progress = 0.00
+		efficiency = 100
+	}
+add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_1
+			creator = "NDE"
+		}
+		requested_factories = 3
+		progress = 0.00
+		efficiency = 100
+	}
+add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "NDE"
+		}
+		requested_factories = 3
+		progress = 0.00
+		efficiency = 100
+	}
+}
