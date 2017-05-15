@@ -53,19 +53,29 @@ set_politics = {
 
 set_convoys = 150
 
+create_faction = Verteidigungsbund
+add_to_faction = NDE
+add_to_faction = AUS
+add_to_faction = GER
+set_research_slots = 4
+
+add_ideas = {
+	major_power
+}
+
 create_country_leader = {
 	name = "Wilhelm II Hohenzollern"
 	desc = "POLITICS_KING_ZOG_DESC"
 	picture = "Portrait_Albania_King_Zog.dds"
 	expire = "1941.6.4"
-	ideology = despotism
+	ideology = conservatism
 	traits = {
 		#
 	}
 }
 
 create_field_marshal = {
-	name = "Gerd von Rundstedt"
+	name = "Reinhardt Kölner"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 	skill = 4
 }

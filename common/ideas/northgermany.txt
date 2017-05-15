@@ -1,0 +1,15 @@
+ideas = {
+	
+	country = {
+	major_power = {
+		allowed = {
+			always = yes
+		}
+		removal_cost = -1
+		picture = generic_pp_unity_bonus
+		rule = {
+		can_create_factions = yes
+		}
+		}
+	}
+}

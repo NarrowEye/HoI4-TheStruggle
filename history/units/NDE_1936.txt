@@ -43,8 +43,68 @@ units = {
 		division_template = "Landwehr"
 		start_experience_factor = 0.2
 	}
-division = {
+	division = {
+		name = "Deutches Landwehr Division 1"
+		location = 11531
+		division_template = "Landwehr"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Deutches Landwehr Division 2"
+		location = 563
+		division_template = "Landwehr"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Deutches Landwehr Division 3"
+		location = 6542
+		division_template = "Landwehr"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Deutches Landwehr Division 4"
+		location = 11640
+		division_template = "Landwehr"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Deutches Landwehr Division 5"
+		location = 3444
+		division_template = "Landwehr"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Deutches Landwehr Division 6"
+		location = 6389
+		division_template = "Landwehr"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Deutches Landwehr Division 7"
+		location = 11260
+		division_template = "Landwehr"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Deutches Landwehr Division 8"
+		location = 9570
+		division_template = "Landwehr"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Deutches Landwehr Division 9"
+		location = 3368
+		division_template = "Landwehr"
+		start_experience_factor = 0.2
+	}
+	division = {
 		name = "Von Moltke Division"
+		location = 6521
+		division_template = "Motorisierte Infantrie"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "Blücher Division"
 		location = 6521
 		division_template = "Motorisierte Infantrie"
 		start_experience_factor = 0.5

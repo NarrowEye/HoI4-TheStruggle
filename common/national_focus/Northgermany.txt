@@ -12,7 +12,8 @@ focus_tree = {
 	
 	default = no
 
-focus = {
+
+	focus = {
 		id = NDE_industry1
 		icon = GFX_goal_generic_construct_infrastructure
 		x = 1
@@ -69,4 +70,255 @@ focus = {
 			}		
 		}
 	}
+	focus = {
+		id = NDE_civ1
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = NDE_industry1 }
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 11
+		}
+
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = NDE_industrial_development }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+					}
+				set_state_flag = NDE_industrial_development
+				}
+				random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+					}
+				set_state_flag = NDE_industrial_development
+				}
+		}
+	}
+	focus = {
+		id = NDE_mil1
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = NDE_industry1 }
+		x = 2
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 11
+		}
+
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = NDE_industrial_development }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
+				set_state_flag = NDE_industrial_development
+				}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
+				set_state_flag = NDE_industrial_development
+			}
+		}
+	}
+	focus = {
+		id = NDE_civ2
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = NDE_civ1 }
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 11
+		}
+
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = NDE_industrial_development }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+					}
+				set_state_flag = NDE_industrial_development
+				}
+				random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+					}
+				set_state_flag = NDE_industrial_development
+				}
+		}
+	}
+	focus = {
+		id = NDE_mil2
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = NDE_mil1 }
+		x = 2
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 11
+		}
+
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = NDE_industrial_development }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+					}
+				set_state_flag = NDE_industrial_development
+				}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+					}
+				set_state_flag = NDE_industrial_development
+			}
+		}
+	}
+	focus = {
+		id = NDE_research
+		icon = GFX_focus_research
+		prerequisite = { focus = NDE_mil2 }
+		prerequisite = { focus = NDE_civ2 }
+		x = 1
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 14
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
 }
