@@ -1,0 +1,109 @@
+bookmarks = {
+	bookmark = {
+		name = "THE_STRUGGLE_NAME"
+		desc = "THE_STRUGGLE_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "ENG"
+		default = yes
+		
+		"FRA"={
+			history = "FRA_THE_STRUGGLE_DESC"
+			ideology = democratic
+			ideas = {
+				major_power
+			}
+			focuses = {
+			}
+		}
+		"USA"={
+			history = "USA_THE_STRUGGLE_DESC"
+			ideology = democratic
+			ideas = {
+				major_power
+			}
+			focuses = {
+				USA_war_plan_red
+				USA_strike_at_the_empire
+				USA_pearl_harbor_gambit
+			}
+		}
+		"ENG"={
+			history = "ENG_THE STRUGGLE_DESC"
+			ideology = democratic
+			ideas = {
+				major_power
+			}
+			focuses = {
+			}
+		}
+
+		"NDE"={
+			history = "NDE_THE_STRUGGLE_DESC"
+			ideology = democratic
+			ideas = {
+				major_power
+			}
+			focuses = {
+			}
+		}
+		"AUS"={
+			history = "AUS_THE_STRUGGLE_DESC"
+			ideology = democratic
+			ideas = {
+				major_power
+			}	
+			focuses = {
+			}		
+		}
+		"JAP"={
+			history = "JAP_THE_STRUGGLE_DESC"
+			ideology = fascism
+			ideas = {
+				state_shintoism
+				major_power
+			}	
+			focuses = {
+			}			
+		}
+		"SOV"={
+			history = "SOV_THE_STRUGGLE_DESC"
+			ideology = democratic
+			ideas = {
+				major_power
+			}
+			focuses = {
+			}	
+		}
+
+		"---"={
+			history = "OTHER_THE_STRUGGLE_DESC"
+		}
+
+
+		# minors from DLC ####
+		"POL"={
+			minor = yes
+			history = "POL_THE_STRUGGLE_DESC"
+			ideology = neutrality
+			ideas = {
+				
+			}
+			focuses = {
+			}
+		}
+		"BRZ"={
+			minor = yes
+			history = "BRZ_THE_STRUGGLE_DESC"
+			ideology = democratic
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

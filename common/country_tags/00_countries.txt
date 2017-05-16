@@ -114,3 +114,5 @@ MAN = "countries/Manchukou.txt"
 ###############################
 NDE = "countries/Northgermany.txt"
 BAL = "countries/Baltics.txt"
+CEA = "countries/CentralAsia.txt"
+SIB = "countries/Siberia.txt"
