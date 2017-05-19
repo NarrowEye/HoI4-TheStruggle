@@ -2702,3 +2702,9 @@
  germany.999.b:0 "What a preposterous suggestion!"
  GAME_OVER_TT:0 "§RThe game will end for you.§!"
  CAN_ANGERED_WORKERS:0 "This will upset the population"
+
+###################################################################
+
+austria.1.t:0 "Austrian Imperialism"
+austria.1.d:0 "For too long we have let ourselves be bullied by the Hungarians. With our recent victory, we have reasserted the Habsburg power in the Northern Balkans, and we are now planning on reinstituting the Hungarian parliament with a government and MPs that are friendly towards our regime. However, what should the talking-points of Franz Ferdinand be for his adress to the Hungarian parliament?"
+austria.1.a:0 "Welcome back friends!"

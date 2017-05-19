@@ -1,0 +1,110 @@
+# Austrian Events
+
+add_namespace = austria
+
+country_event = {
+	id = austria.1
+	title = austria.1.t
+	desc = austria.1.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = austria.1a
+		155 = {
+			if = {
+				limit = { is_owned_by = HUN }
+				add_core_of = AUS
+			}
+		}
+		70 = {
+			if = {
+				limit = { is_owned_by = HUN }
+				add_core_of = AUS
+			}
+		}
+		154 = {
+			if = {
+				limit = { is_owned_by = HUN }
+				add_core_of = AUS
+			}
+		}
+		43 = {
+			if = {
+				limit = { is_owned_by = HUN }
+				add_core_of = AUS
+			}
+		}
+		664 = {
+			if = {
+				limit = { is_owned_by = HUN }
+				add_core_of = AUS
+			}
+		}
+		71 = {
+			if = {
+				limit = { is_owned_by = HUN }
+				add_core_of = AUS
+			}
+		}
+		73 = {
+			if = {
+				limit = { is_owned_by = HUN }
+				add_core_of = AUS
+			}
+		}
+		83 = {
+			if = {
+				limit = { is_owned_by = HUN }
+				add_core_of = AUS
+			}
+		}
+		76 = {
+			if = {
+				limit = { is_owned_by = HUN }
+				add_core_of = AUS
+			}
+		}
+		84 = {
+			if = {
+				limit = { is_owned_by = HUN }
+				add_core_of = AUS
+			}
+		}
+		82 = {
+			if = {
+				limit = { is_owned_by = HUN }
+				add_core_of = AUS
+			}
+		}
+		109 = {
+			if = {
+				limit = { is_owned_by = HUN }
+				add_core_of = AUS
+			}
+		}
+		103 = {
+			if = {
+				limit = { is_owned_by = HUN }
+				add_core_of = AUS
+			}
+		}
+		163 = {
+			if = {
+				limit = { is_owned_by = HUN }
+				add_core_of = AUS
+			}
+		}
+		45 = {
+			if = {
+				limit = { is_owned_by = HUN }
+				add_core_of = AUS
+			}
+		}
+		annex_country = { target = HUN }
+		add_political_power = -100
+		add_named_threat = { threat = 8 name = AUS.1.t }
+		set_country_flag = AUS_fullausgleich
+	}
+}

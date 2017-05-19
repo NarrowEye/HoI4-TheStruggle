@@ -13,7 +13,8 @@
 		infantry = { x = 2 y = 2 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }   # Pioneer Bn
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
 	}
 }
 
@@ -27,9 +28,13 @@ division_template = {
 		mountaineers = { x = 1 y = 0 }
 		mountaineers = { x = 1 y = 1 }
 		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }   # Pioneer Bn
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
 	}
 }
 
@@ -55,7 +60,7 @@ units = {
 		location = 11666  # Vienna
 		division_template = "Schnelle Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0
 
 	}
 	division= {	
@@ -63,7 +68,23 @@ units = {
 		location = 11666  # Vienna
 		division_template = "Infanterie Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0
+
+	}
+	division= {	
+		name = "10. Division"
+		location = 11666  # Vienna
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0
+
+	}
+	division= {	
+		name = "11. Division"
+		location = 11666  # Vienna
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0
 
 	}
 	division= {	
@@ -71,7 +92,7 @@ units = {
 		location = 11666  # Vienna
 		division_template = "Infanterie Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0
 
 	}
 	division= {	
@@ -79,7 +100,7 @@ units = {
 		location = 11651 # St Poelten
 		division_template = "Infanterie Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0
 
 	}
 
@@ -89,7 +110,7 @@ units = {
 		location = 9665 # Linz
 		division_template = "Infanterie Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0
 
 	}
 	division= {	
@@ -97,7 +118,7 @@ units = {
 		location = 9648  # Graz
 		division_template = "Alpenjäger Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0
 
 	}
 	division= {	
@@ -105,7 +126,7 @@ units = {
 		location = 673  # Innsbruck
 		division_template = "Alpenjäger Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0
 
 	}
 	division= {	
@@ -113,7 +134,7 @@ units = {
 		location = 688  # Salzburg
 		division_template = "Alpenjäger Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0
 
 	}
 
@@ -122,7 +143,7 @@ units = {
 		location = 11666  # Vienna
 		division_template = "Alpenjäger Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0
 
 	}
 }

@@ -1,3 +1,4 @@
+######################Economic branch###########################
 focus_tree = {
 	id = austria_focus
 	
@@ -139,6 +140,7 @@ focus_tree = {
 			add_research_slot = 1
 		}
 	}
+	####################Political branch##########################
 	focus = {
 		id = AUS_pol1
 		icon = GFX_goal_generic_demand_territory
@@ -197,5 +199,49 @@ focus_tree = {
 				category = land_doctrine
 				}
 		}
+	}
+	focus = {
+		id = AUS_warhun
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 3
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		
+		prerequisite = { focus = AUS_polagr2 }
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+					create_wargoal = {
+						type = puppet_wargoal_focus
+						target = HUN
+					}
+				}
+		}
+	focus = {
+		id = AUS_ausgleich
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 3
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+			HUN = {
+				is_puppet = yes
+			}
+		}
+		prerequisite = { focus = AUS_warhun }
+
+		completion_reward = {
+			AUS = {
+			country_event = austria.1
+			}
+		}
+
 	}
 }
